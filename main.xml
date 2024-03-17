@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE article PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN" "http://www.oasis-open.org/docbook/xml/4.5/docbookx.dtd">
+<?asciidoc-toc?>
+<?asciidoc-numbered?>
+
+<article lang="en">
+<articleinfo>
+    <title>Document Title</title>
+    <author>
+        <firstname>Doc</firstname>
+        <surname>Writer</surname>
+        <email>doc@example.com</email>
+    </author>
+    <authorinitials>DW</authorinitials>
+</articleinfo>
+<simpara>An example of a basic <ulink url="https://asciidoc.org">AsciiDoc</ulink> document prepared by Doc Writer.</simpara>
+<section id="_introduction">
+<title>Introduction</title>
+<simpara>A paragraph followed by an unordered list<footnote><simpara>AsciiDoc supports unordered, ordered, and description lists.</simpara></footnote> with square bullets.<footnote><simpara>You may choose from square, disc, and circle for the bullet style.</simpara></footnote></simpara>
+<itemizedlist>
+<listitem>
+<simpara>
+item 1
+</simpara>
+</listitem>
+<listitem>
+<simpara>
+item 2
+</simpara>
+</listitem>
+<listitem>
+<simpara>
+item 3
+</simpara>
+</listitem>
+</itemizedlist>
+</section>
+<section id="_main">
+<title>Main</title>
+<simpara>Here&#8217;s how you say "<literal>Hello, World!</literal>" in Prawn:</simpara>
+<formalpara><title>Create a basic PDF document using Prawn</title><para>
+<programlisting language="ruby" linenumbering="unnumbered">require 'prawn'
+
+Prawn::Document.generate 'example.pdf' do
+  text 'Hello, World!'
+end</programlisting>
+</para></formalpara>
+</section>
+<section id="_conclusion">
+<title>Conclusion</title>
+<simpara>That&#8217;s all, folks!</simpara>
+</section>
+</article>
